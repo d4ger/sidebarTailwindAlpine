@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- header / sidebar -->
+    <header>
+        <div x-data="{open:false}">
+            <!-- sidebar -->
+            <button @click="open=true" class="text-2xl mr-3 mt-1">boton</button>
+            <nav class="container mx-auto px-4 flex items-center justify-between py-4">
+                <div class="absolute top-0 left-0 bg-white border border-right h-full w-48 hiddenf"
+                @click.away="open=false"
+                x-show="open">
+                    <ul>
+                        <li>
+                            <a href="#" class="flex items-center px-3 py-3 hover:bg-gray-200">
+                                <span class="ml-2">Account</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center px-3 py-3 hover:bg-gray-200">
+                                <span class="ml-2">Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
