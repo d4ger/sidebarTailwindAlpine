@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex flex-col min-h-screen" x-data="{open:false}">
+        <header class="flex fixed items-center top-0 left-0 z-20 justify-between w-full px-4 backdrop-blur-lg bg-[#f0f0f0]/90 border-b 
+        border-gray-300 h-14">
+        <!-- boton sidebar -->
+            <button @click="open=true" class="bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold p-2 rounded-lg inline-flex items-center">
+                <span class="sr-only">Menu</span>
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <!-- contenido sidebar -->
+            <nav class="container mx-auto px-4 flex items-center justify-between py-4">
+                <div class="bg-white text-black h-screen w-60 fixed left-0 top-0 divide-y-2 divide-slate-200 z-30 whitespace-nowrap overflow-auto scrollbar-hide transition origin-left transform border-r translate-x-0"
+                @click.away="open=false"
+                x-show="open">
+                    <ul>
+                        <li>
+                            <a href="#" class="flex items-center p-3 hover:bg-gray-200">
+                                <span class="ml-2">Account</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-3 hover:bg-gray-200">
+                                <span class="ml-2">Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="flex">
+                <span class="text-lg font-monospace flow-text text-gray-600 pt-3 pb-2">Informatica</span>
+                <a class="nav-link black-text no-underline cursor-pointer pt-2 pb-2">
+                    <img class="w-8 rounded-full ml-4 mr-4" src="assets/usuario.jpg" alt="usuario"/>
+                </a>
+            </div>
+        </header>
+        <main>
+            
+        </main>
+        <footer class="bg-[#3D5876] text-white border-gray-100 border-t-2 mt-auto">
+            <div class="w-full max-w-screen-xl mx-auto p-4">
+                <span class="block text-sm sm:text-center">© 2023 Sistema Integral de Estadísticas Hospitalarias - 
+                    <a href="https://hospitalsandiegodealcala.com/" class="hover:underline">Hospital San Diego De Alcalá</a>. Todos los derechos reservados.
+                </span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
