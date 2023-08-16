@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <title>Document</title>
 </head>
 <body>
@@ -23,18 +25,70 @@
                 <div class="bg-white text-black h-screen w-60 fixed left-0 top-0 divide-y-2 divide-slate-200 z-30 whitespace-nowrap overflow-auto scrollbar-hide transition origin-left transform border-r translate-x-0"
                 @click.away="open=false"
                 x-show="open">
-                    <ul>
-                        <li>
-                            <a href="#" class="flex items-center p-3 hover:bg-gray-200">
-                                <span class="ml-2">Account</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center p-3 hover:bg-gray-200">
-                                <span class="ml-2">Settings</span>
-                            </a>
-                        </li>
-                    </ul>
+                    <div>
+                        <a href="/a.html" class="p-8 w-full h-full">
+                            <img src="img/logonuevohorizontal.svg" alt="logo" class="w-full h-24 p-4">
+                        </a>
+                    </div>
+                    <div class="text-sm h-auto font-medium text-[#3D5876]">
+                        <ul>
+                            <li>
+                                <a href="#" class="flex flex-row gap-2 items-center mt-6 px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900">
+                                    <i class="material-icons left">home</i>
+                                    <span class="ml-2">Inicio</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex flex-row gap-2 items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900">
+                                    <i class="material-icons left">contacts</i>
+                                    <span class="ml-2">Directorio</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex flex-row gap-2 items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900">
+                                    <i class="material-icons left">warning</i>
+                                    <span class="ml-2">Eventos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex flex-row gap-2 items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900">
+                                    <i class="material-icons left">people</i>
+                                    <span class="ml-2">Departamentos</span>
+                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex flex-row gap-2 items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900">
+                                    <i class="material-icons left">today</i>
+                                    <span class="ml-2">Sala de Juntas</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex flex-row gap-2 items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900">
+                                    <i class="material-icons left">info</i>
+                                    <span class="ml-2">Manuales y Guias</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex flex-row gap-2 items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900">
+                                    <i class="material-icons left">link</i>
+                                    <span class="ml-2">Enlaces</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex flex-row gap-2 items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900">
+                                    <i class="material-icons">help</i>
+                                    <span class="ml-2">Quienes Somos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex flex-row gap-2 items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900">
+                                    <i class="material-icons left">logout</i>
+                                    <span class="ml-2">Cerrar Sesion</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
             <div class="flex">
