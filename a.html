@@ -20,7 +20,7 @@
                     <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
                 </svg>
             </button>
-            <!-- contenido sidebar -->
+            <!-- Inicio sidebar -->
             <nav class="container mx-auto px-4 flex items-center justify-between py-4">
                 <div class="bg-white text-black h-screen w-60 fixed left-0 top-0 divide-y-2 divide-slate-200 z-30 whitespace-nowrap overflow-auto scrollbar-hide transition origin-left transform border-r translate-x-0"
                 @click.away="open=false"
@@ -39,10 +39,34 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="flex flex-row gap-2 items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900">
-                                    <i class="material-icons left">contacts</i>
-                                    <span class="ml-2">Directorio</span>
-                                </a>
+                                <div x-data="{showMenu : false}" class="w-full">
+                                    <div @click.prevent="showMenu = !showMenu" class="flex flex-row gap-2 items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900">
+                                        <i class="material-icons left">contacts</i>
+                                        <button class="ml-2">
+                                            Directorio
+                                        </button>
+                                        <div class="ml-20">
+                                            <img class="w-4 h-4" x-show="!showMenu" src="./img/arrow-next-small-svgrepo-com.svg" alt="">
+                                            <img class="w-4 h-4" x-show="showMenu" src="./img/arrow-down-svgrepo-com.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div x-show="showMenu" class="w-full">
+                                        <nav class="flex flex-col">
+                                            <a href="#" class="flex flex-row gap-2  items-center py-2 pl-14 pr-4 transition cursor-pointer hover:bg-gray-100 hover:text-gray-900">
+                                                Internos
+                                                <!-- imagen flecha -->    
+                                            </a>
+                                            <a href="#" class="flex flex-row gap-2  items-center py-2 pl-14 pr-4 transition cursor-pointer hover:bg-gray-100 hover:text-gray-900">
+                                                Medicos
+                                                <!-- imagen flecha -->
+                                            </a>
+                                            <a href="#" class="flex flex-row gap-2  items-center py-2 pl-14 pr-4 transition cursor-pointer hover:bg-gray-100 hover:text-gray-900">
+                                                Medicos Socios
+                                                <!-- imagen flecha -->
+                                            </a>
+                                        </nav>
+                                    </div>
+                                </div>
                             </li>
                             <li>
                                 <a href="#" class="flex flex-row gap-2 items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900">
@@ -54,7 +78,6 @@
                                 <a href="#" class="flex flex-row gap-2 items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900">
                                     <i class="material-icons left">people</i>
                                     <span class="ml-2">Departamentos</span>
-                                    
                                 </a>
                             </li>
                             <li>
@@ -66,14 +89,43 @@
                             <li>
                                 <a href="#" class="flex flex-row gap-2 items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900">
                                     <i class="material-icons left">info</i>
-                                    <span class="ml-2">Manuales y Guias</span>
+                                    <span class="ml-2">Manuales y Guías</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="flex flex-row gap-2 items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900">
-                                    <i class="material-icons left">link</i>
-                                    <span class="ml-2">Enlaces</span>
-                                </a>
+                                <div x-data="{showMenu : false}" class="w-full">
+                                    <div @click.prevent="showMenu = !showMenu" 
+                                    class="flex flex-row gap-2 items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900">
+                                        <i class="material-icons left">link</i>
+                                        <button class="ml-2">
+                                            Enlaces
+                                        </button>
+                                        <div class="ml-24">
+                                            <img class="w-4 h-4" x-show="!showMenu" src="./img/arrow-next-small-svgrepo-com.svg" alt="">
+                                            <img class="w-4 h-4" x-show="showMenu" src="./img/arrow-down-svgrepo-com.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div x-show="showMenu" class="w-full">
+                                        <nav class="flex flex-col">
+                                            <a href="#" class="flex flex-row gap-2  items-center py-2 pl-14 pr-4 transition cursor-pointer hover:bg-gray-100 hover:text-gray-900">
+                                                SIEH
+                                                <!-- imagen flecha -->    
+                                            </a>
+                                            <a href="#" class="flex flex-row gap-2  items-center py-2 pl-14 pr-4 transition cursor-pointer hover:bg-gray-100 hover:text-gray-900">
+                                                Sistema de Tickets
+                                                <!-- imagen flecha -->
+                                            </a>
+                                            <a href="#" class="flex flex-row gap-2  items-center py-2 pl-14 pr-4 transition cursor-pointer hover:bg-gray-100 hover:text-gray-900">
+                                                Expediente
+                                                <!-- imagen flecha -->
+                                            </a>
+                                            <a href="#" class="flex flex-row gap-2  items-center py-2 pl-14 pr-4 transition cursor-pointer hover:bg-gray-100 hover:text-gray-900">
+                                                Capacitación
+                                                <!-- imagen flecha -->
+                                            </a>
+                                        </nav>
+                                    </div>
+                                </div>
                             </li>
                             <li>
                                 <a href="#" class="flex flex-row gap-2 items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900">
@@ -84,13 +136,14 @@
                             <li>
                                 <a href="#" class="flex flex-row gap-2 items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900">
                                     <i class="material-icons left">logout</i>
-                                    <span class="ml-2">Cerrar Sesion</span>
+                                    <span class="ml-2">Cerrar Sesión</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            <!-- Final sidebar -->
             <div class="flex">
                 <span class="text-lg font-monospace flow-text text-gray-600 pt-3 pb-2">Informatica</span>
                 <a class="nav-link black-text no-underline cursor-pointer pt-2 pb-2">
