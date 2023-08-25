@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <title>Document</title>
 </head>
-<body>
+<body class="bg-[#fafafa]">
     <div class="flex flex-col min-h-screen" x-data="{open:false}">
         <header class="flex fixed items-center top-0 left-0 z-20 justify-between w-full px-4 backdrop-blur-lg bg-[#f0f0f0]/90 border-b 
         border-gray-300 h-14">
@@ -151,7 +151,59 @@
                 </a>
             </div>
         </header>
-        <main>
+        <main class="bg-[#fafafa] mt-10 py-8 flex flex-col gap-4 min-h-screen">
+            <section class="min-h-screen w-[95%] mx-auto bg-[#fafafa]">
+                <h1 class="flex m-0 items-center text-4xl font-semibold leading-normal text-[#3D5876] mb-4">
+                    Directorio - Internos
+                </h1>
+                <h2 class="flex -mt-2 items-center text-2xl font-normal leading-normal text-gray-500 mb-4">
+                    Aquí puedes visualizar información y registrar nuevos internos.
+                </h2>
+                <a class=" mb-4 inline-flex w-fit items-center justify-center p-5 text-base font-medium shadow-sm text-white border border-gray-300 rounded-md bg-[#3D5876] hover:bg-slate-700" href="/Formulario/Create">
+                    <i class="material-icons left">person_add</i>
+                    <span class="w-full ml-1">Registrar nuevo interno</span>
+                    <svg aria-hidden="true" class="w-6 h-6 ml-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <div class="mx-auto w-full h-fit p-2 bg-white border border-gray-300 rounded-md shadow-md">
+                    <div id="EXPACIENTE_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="EXPACIENTE_length">
+                        <div class="flex justify-between">
+                                <label>Mostrar <select name="EXPACIENTE_length" aria-controls="EXPACIENTE" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> registros</label></div><div id="EXPACIENTE_filter" class="dataTables_filter">
+                                <label>Buscar:<input type="search" class="" placeholder="" aria-controls="EXPACIENTE"></label>
+                            </div>
+                            <div id="EXPACIENTE_processing" class="dataTables_processing" role="status" style="display: none;">Procesando...<div><div></div><div></div><div></div><div></div></div></div><table id="EXPACIENTE" class="display nowrap responsive py-4 dataTable no-footer dtr-inline" style="width: 100%;" aria-describedby="EXPACIENTE_info">
+                        </div>
+                        <thead>
+                            <tr><th class="bg-[#3D5876] font-semibold text-xl text-white uppercase rounded-none p-3 sorting sorting_asc" tabindex="0" aria-controls="EXPACIENTE" rowspan="1" colspan="1" style="width: 138px;" aria-sort="ascending" aria-label="
+                                    Expediente
+                                : Activar para ordenar la columna de manera descendente">
+                                    Expediente
+                                </th><th class="bg-[#3D5876] font-semibold text-xl text-white uppercase rounded-none sorting" tabindex="0" aria-controls="EXPACIENTE" rowspan="1" colspan="1" style="width: 262px;" aria-label="
+                                    Nombre del paciente
+                                : Activar para ordenar la columna de manera ascendente">
+                                    Nombre del paciente
+                                </th><th class="bg-[#3D5876] font-semibold text-xl text-white uppercase rounded-none sorting" tabindex="0" aria-controls="EXPACIENTE" rowspan="1" colspan="1" style="width: 95px;" aria-label="
+                                    Género
+                                : Activar para ordenar la columna de manera ascendente">
+                                    Género
+                                </th><th class="bg-[#3D5876] font-semibold text-xl text-white uppercase rounded-none sorting" tabindex="0" aria-controls="EXPACIENTE" rowspan="1" colspan="1" style="width: 66px;" aria-label="
+                                    Edad
+                                : Activar para ordenar la columna de manera ascendente">
+                                    Edad
+                                </th><th class="bg-[#3D5876] font-semibold text-xl text-white uppercase rounded-none sorting" tabindex="0" aria-controls="EXPACIENTE" rowspan="1" colspan="1" style="width: 261px;" aria-label="
+                                    Fecha de nacimiento
+                                : Activar para ordenar la columna de manera ascendente">
+                                    Fecha de nacimiento
+                                </th><th class="bg-[#3D5876] font-semibold text-xl text-white uppercase rounded-none sorting" tabindex="0" aria-controls="EXPACIENTE" rowspan="1" colspan="1" style="width: 217px;" aria-label="Historial
+                                    Clínico
+                                : Activar para ordenar la columna de manera ascendente">Historial
+                                    Clínico
+                                </th></tr>
+                        </thead>
+                    </table>
+                </div>
+            </section>
             
         </main>
         <footer class="bg-[#3D5876] text-white border-gray-100 border-t-2 mt-auto">
