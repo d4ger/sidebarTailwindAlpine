@@ -222,11 +222,27 @@
                                     clip-rule="evenodd"></path>
                             </svg>
                         </a>
-                        <div x-show="open" @click.outside="open = !open">
-                            <div class="absolute">
-                                <p></p>
-                                <p></p>
-                                <p></p>
+                        <div x-show="open" @click.outside="open = false" class="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+                            <div class="bg-white p-4 rounded-lg shadow-lg max-w-xl mx-auto">
+                                <form action="">
+                                    <label for="titulo">Titulo:</label>
+                                    <input type="text" name="nombre" id="nombre" required class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    <br>
+                                    <label for="descripcion">Descripción:</label>
+                                    <br>
+                                    <textarea name="descripcion" id="descripcion" required class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                                    <br>
+                                    <label for="imagen">Imagen del artículo:</label>
+                                    <br>
+                                    <input type="file" name="imagen" id="imagen" accept="image/*" required class="">
+                                    <div class="flex flex-inline items-center justify-between mt-4">
+                                        <button @click="open = false" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-[#3D5876] hover:bg-slate-700">
+                                            Cerrar
+                                        </button>
+                                        <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-[#3D5876] hover:bg-slate-700">Guardar</button>
+                                    </div>
+                                </form>
+                                
                             </div>
                         </div>
                     </div>
