@@ -208,24 +208,38 @@
                             Intranet Hospital San Diego De Alcalá
                         </h2>
                     </div>
-                    <section class="flex flex-wrap">
-                        <div class="w-1/2">
-                            <img src="img/hospital.png" alt="hospital">
+                    <section class="sm:flex sm:flex-wrap">
+                        <!-- Mitad izquierda de la página -->
+                        <div class="sm:w-1/2">
+                            <img src="img/hospital.png" alt="hospital" class="w-full">
                         </div>
-                        <div class="w-1/2">
-                            <div class="w-">
-                                <div class="w-1/2"><img src="img/mision.png" alt="" class="w-full"></div>
-                                <div class="w-1/2"><img src="img/vision.png" alt="" class="w-full"></div>
+                    
+                        <!-- Mitad derecha de la página -->
+                        <div class="sm:w-1/2">
+                            <!-- Primera fila de imágenes -->
+                            <div class="sm:flex">
+                                <div class="sm:w-1/2">
+                                    <img src="img/mision.png" alt="" class="w-full">
+                                </div>
+                                <div class="sm:w-1/2">
+                                    <img src="img/vision.png" alt="" class="w-full">
+                                </div>
                             </div>
-                            <div>
-                                <div class="w-1/2"><img src="img/hosptal.png" alt="" class="w-full"></div>
-                                <div class="w-1/2"><img src="img/valors.png" alt="" class="w-full"></div>
+                    
+                            <!-- Segunda fila de imágenes -->
+                            <div class="sm:flex">
+                                <div class="sm:w-1/2">
+                                    <img src="img/hosptal.png" alt="" class="w-full">
+                                </div>
+                                <div class="sm:w-1/2">
+                                    <img src="img/valors.png" alt="" class="w-full">
+                                </div>
                             </div>
                         </div>
                     </section>
                     
                     <div x-data="{open: false}">
-                        <a @click="open = !ope"
+                        <a @click="open = !open"
                             class="mb-4 inline-flex w-fit items-center justify-center p-5 text-base font-medium shadow-sm cursor-pointer text-white border border-gray-300 rounded-md bg-[#3D5876] hover:bg-slate-700">
                             <i class="material-icons left">person_add</i>
                             <span class="w-full ml-1">Registrar nueva noticia</span>
