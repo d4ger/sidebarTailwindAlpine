@@ -27,7 +27,7 @@
                 x-show="open">
                     <div>
                         <a href="/a.html" class="p-8 w-full h-full">
-                            <img src="img/logonuevohorizontal.svg" alt="logo" class="w-full h-24 p-4">
+                            <img src="../img/logonuevohorizontal.svg" alt="logo" class="w-full h-24 p-4">
                         </a>
                     </div>
                     <div class="text-sm h-auto font-medium text-[#3D5876]">
@@ -46,8 +46,8 @@
                                             Directorio
                                         </button>
                                         <div class="ml-20">
-                                            <img class="w-4 h-4" x-show="!showMenu" src="./img/arrow-next-small-svgrepo-com.svg" alt="">
-                                            <img class="w-4 h-4" x-show="showMenu" src="./img/arrow-down-svgrepo-com.svg" alt="">
+                                            <img class="w-4 h-4" x-show="!showMenu" src="../img/arrow-next-small-svgrepo-com.svg" alt="">
+                                            <img class="w-4 h-4" x-show="showMenu" src="../img/arrow-down-svgrepo-com.svg" alt="">
                                         </div>
                                     </div>
                                     <div x-show="showMenu" class="w-full">
@@ -101,13 +101,13 @@
                                             Enlaces
                                         </button>
                                         <div class="ml-24">
-                                            <img class="w-4 h-4" x-show="!showMenu" src="./img/arrow-next-small-svgrepo-com.svg" alt="">
-                                            <img class="w-4 h-4" x-show="showMenu" src="./img/arrow-down-svgrepo-com.svg" alt="">
+                                            <img class="w-4 h-4" x-show="!showMenu" src="../img/arrow-next-small-svgrepo-com.svg" alt="">
+                                            <img class="w-4 h-4" x-show="showMenu" src="../img/arrow-down-svgrepo-com.svg" alt="">
                                         </div>
                                     </div>
                                     <div x-show="showMenu" class="w-full">
                                         <nav class="flex flex-col">
-                                            <a href="#" class="flex flex-row gap-2  items-center py-2 pl-14 pr-4 transition cursor-pointer hover:bg-gray-100 hover:text-gray-900">
+                                            <a href="http://sieh.hsda.com/" class="flex flex-row gap-2  items-center py-2 pl-14 pr-4 transition cursor-pointer hover:bg-gray-100 hover:text-gray-900">
                                                 SIEH
                                                 <!-- imagen flecha -->    
                                             </a>
@@ -147,7 +147,7 @@
             <div class="flex">
                 <span class="text-lg font-monospace flow-text text-gray-600 pt-3 pb-2">Informatica</span>
                 <a class="nav-link black-text no-underline cursor-pointer pt-2 pb-2">
-                    <img class="w-8 rounded-full ml-4 mr-4" src="assets/usuario.jpg" alt="usuario"/>
+                    <img class="w-8 rounded-full ml-4 mr-4" src="../img/assets/usuario.jpg" alt="usuario"/>
                 </a>
             </div>
         </header>
@@ -181,44 +181,50 @@
                     </div>
                 </div>
                 <div class="mx-auto w-full h-fit p-2 bg-white border border-gray-300 rounded-md shadow-md">
-                    <div id="EXPACIENTE_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="EXPACIENTE_length">
-                        <div class="flex justify-between">
-                                <label>Mostrar <select name="EXPACIENTE_length" aria-controls="EXPACIENTE" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> registros</label></div><div id="EXPACIENTE_filter" class="dataTables_filter">
-                                <label>Buscar:<input type="search" class="" placeholder="" aria-controls="EXPACIENTE"></label>
-                            </div>
-                            <div id="EXPACIENTE_processing" class="dataTables_processing" role="status" style="display: none;">Procesando...<div><div></div><div></div><div></div><div></div></div></div><table id="EXPACIENTE" class="display nowrap responsive py-4 dataTable no-footer dtr-inline" style="width: 100%;" aria-describedby="EXPACIENTE_info">
-                        </div>
+                    <div id="EXPACIENTE_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="EXPACIENTE_length"><label>Mostrar <select name="EXPACIENTE_length" aria-controls="EXPACIENTE" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> registros</label></div><div id="EXPACIENTE_filter" class="dataTables_filter"><label>Buscar:<input type="search" class="" placeholder="" aria-controls="EXPACIENTE"></label></div><div id="EXPACIENTE_processing" class="dataTables_processing" role="status" style="display: none;">Procesando...<div><div></div><div></div><div></div><div></div></div></div><table id="EXPACIENTE" class="display nowrap responsive py-4 dataTable no-footer dtr-inline" style="width: 100%;" aria-describedby="EXPACIENTE_info">
                         <thead>
-                            <tr><th class="bg-[#3D5876] font-semibold text-xl text-white uppercase rounded-none p-3 sorting sorting_asc" tabindex="0" aria-controls="EXPACIENTE" rowspan="1" colspan="1" style="width: 138px;" aria-sort="ascending" aria-label="
+                            <tr><th class="bg-[#3D5876] font-semibold text-xl text-white uppercase rounded-none sorting sorting_asc" tabindex="0" aria-controls="EXPACIENTE" rowspan="1" colspan="1" style="width: 128px;" aria-label="
                                     Expediente
-                                : Activar para ordenar la columna de manera descendente">
+                                : Activar para ordenar la columna de manera descendente" aria-sort="ascending">
                                     Expediente
-                                </th><th class="bg-[#3D5876] font-semibold text-xl text-white uppercase rounded-none sorting" tabindex="0" aria-controls="EXPACIENTE" rowspan="1" colspan="1" style="width: 262px;" aria-label="
+                                </th><th class="bg-[#3D5876] font-semibold text-xl text-white uppercase rounded-none sorting" tabindex="0" aria-controls="EXPACIENTE" rowspan="1" colspan="1" style="width: 245px;" aria-label="
                                     Nombre del paciente
                                 : Activar para ordenar la columna de manera ascendente">
                                     Nombre del paciente
-                                </th><th class="bg-[#3D5876] font-semibold text-xl text-white uppercase rounded-none sorting" tabindex="0" aria-controls="EXPACIENTE" rowspan="1" colspan="1" style="width: 95px;" aria-label="
+                                </th><th class="bg-[#3D5876] font-semibold text-xl text-white uppercase rounded-none sorting" tabindex="0" aria-controls="EXPACIENTE" rowspan="1" colspan="1" style="width: 88px;" aria-label="
                                     Género
                                 : Activar para ordenar la columna de manera ascendente">
                                     Género
-                                </th><th class="bg-[#3D5876] font-semibold text-xl text-white uppercase rounded-none sorting" tabindex="0" aria-controls="EXPACIENTE" rowspan="1" colspan="1" style="width: 66px;" aria-label="
+                                </th><th class="bg-[#3D5876] font-semibold text-xl text-white uppercase rounded-none sorting" tabindex="0" aria-controls="EXPACIENTE" rowspan="1" colspan="1" style="width: 61px;" aria-label="
                                     Edad
                                 : Activar para ordenar la columna de manera ascendente">
                                     Edad
-                                </th><th class="bg-[#3D5876] font-semibold text-xl text-white uppercase rounded-none sorting" tabindex="0" aria-controls="EXPACIENTE" rowspan="1" colspan="1" style="width: 261px;" aria-label="
+                                </th><th class="bg-[#3D5876] font-semibold text-xl text-white uppercase rounded-none sorting" tabindex="0" aria-controls="EXPACIENTE" rowspan="1" colspan="1" style="width: 244px;" aria-label="
                                     Fecha de nacimiento
                                 : Activar para ordenar la columna de manera ascendente">
                                     Fecha de nacimiento
-                                </th><th class="bg-[#3D5876] font-semibold text-xl text-white uppercase rounded-none sorting" tabindex="0" aria-controls="EXPACIENTE" rowspan="1" colspan="1" style="width: 217px;" aria-label="Historial
+                                </th><th class="bg-[#3D5876] font-semibold text-xl text-white uppercase rounded-none sorting" tabindex="0" aria-controls="EXPACIENTE" rowspan="1" colspan="1" style="width: 203px;" aria-label="Historial
                                     Clínico
                                 : Activar para ordenar la columna de manera ascendente">Historial
                                     Clínico
                                 </th></tr>
                         </thead>
-                    </table>
+                        <tbody>
+                        <tr class="odd"><td class="sorting_1 dtr-control">11516</td><td>ACUÑA DANZOS JUDITH ADILENE</td><td>FEMENINO</td><td>36</td><td>28/10/1986</td><td><a href="/Formulario/Details/11516" class="bg-[#3D5876] text-white font-bold rounded-md p-2 cursor-pointer flex justify-center items-center mx-auto h-fit w-fit">
+                                        <i class="material-icons small align-middle">assignment_ind</i></a></td></tr><tr class="even"><td class="sorting_1 dtr-control">11461</td><td>CASTILLO REYES GUADALUPE</td><td>FEMENINO</td><td>69</td><td>09/11/1953</td><td><a href="/Formulario/Details/11461" class="bg-[#3D5876] text-white font-bold rounded-md p-2 cursor-pointer flex justify-center items-center mx-auto h-fit w-fit">
+                                        <i class="material-icons small align-middle">assignment_ind</i></a></td></tr><tr class="odd"><td class="sorting_1 dtr-control">4734</td><td>ESTRADA LOPEZ GUADALUPE</td><td>FEMENINO</td><td>49</td><td>19/12/1973</td><td><a href="/Formulario/Details/4734" class="bg-[#3D5876] text-white font-bold rounded-md p-2 cursor-pointer flex justify-center items-center mx-auto h-fit w-fit">
+                                        <i class="material-icons small align-middle">assignment_ind</i></a></td></tr><tr class="even"><td class="sorting_1 dtr-control">11447</td><td>LEON GAMEZ HECTOR ANDRES</td><td>MASCULINO</td><td>17</td><td>09/12/2005</td><td><a href="/Formulario/Details/11447" class="bg-[#3D5876] text-white font-bold rounded-md p-2 cursor-pointer flex justify-center items-center mx-auto h-fit w-fit">
+                                        <i class="material-icons small align-middle">assignment_ind</i></a></td></tr><tr class="odd"><td class="sorting_1 dtr-control">11475</td><td>PAZ SANCHEZ MATILDE IRMA</td><td>FEMENINO</td><td>65</td><td>14/03/1958</td><td><a href="/Formulario/Details/11475" class="bg-[#3D5876] text-white font-bold rounded-md p-2 cursor-pointer flex justify-center items-center mx-auto h-fit w-fit">
+                                        <i class="material-icons small align-middle">assignment_ind</i></a></td></tr><tr class="even"><td class="sorting_1 dtr-control">11495</td><td>UNG ARROYO JUAN LORENZO</td><td>MASCULINO</td><td>47</td><td>16/12/1975</td><td><a href="/Formulario/Details/11495" class="bg-[#3D5876] text-white font-bold rounded-md p-2 cursor-pointer flex justify-center items-center mx-auto h-fit w-fit">
+                                        <i class="material-icons small align-middle">assignment_ind</i></a></td></tr><tr class="odd"><td class="sorting_1 dtr-control">11174</td><td>REYES LOPEZ MARLA ANTUANET</td><td>FEMENINO</td><td>12</td><td>08/04/2011</td><td><a href="/Formulario/Details/11174" class="bg-[#3D5876] text-white font-bold rounded-md p-2 cursor-pointer flex justify-center items-center mx-auto h-fit w-fit">
+                                        <i class="material-icons small align-middle">assignment_ind</i></a></td></tr><tr class="even"><td class="sorting_1 dtr-control">11502</td><td>CABANILLAS MENDIVIL MARIA</td><td>FEMENINO</td><td>94</td><td>13/12/1928</td><td><a href="/Formulario/Details/11502" class="bg-[#3D5876] text-white font-bold rounded-md p-2 cursor-pointer flex justify-center items-center mx-auto h-fit w-fit">
+                                        <i class="material-icons small align-middle">assignment_ind</i></a></td></tr><tr class="odd"><td class="sorting_1 dtr-control">11489</td><td>AGUIRRE GALLEGOS MARIANA</td><td>FEMENINO</td><td>29</td><td>25/05/1994</td><td><a href="/Formulario/Details/11489" class="bg-[#3D5876] text-white font-bold rounded-md p-2 cursor-pointer flex justify-center items-center mx-auto h-fit w-fit">
+                                        <i class="material-icons small align-middle">assignment_ind</i></a></td></tr><tr class="even"><td class="sorting_1 dtr-control">11496</td><td>AGUIRRE GALLEGOS RN</td><td>MASCULINO</td><td>0</td><td>01/01/2023</td><td><a href="/Formulario/Details/11496" class="bg-[#3D5876] text-white font-bold rounded-md p-2 cursor-pointer flex justify-center items-center mx-auto h-fit w-fit">
+                                        <i class="material-icons small align-middle">assignment_ind</i></a></td></tr>
+                        </tbody>
+                    </table><div class="dataTables_info" id="EXPACIENTE_info" role="status" aria-live="polite">Mostrando registros del 1 al 10 de un total de 2,254 registros</div><div class="dataTables_paginate paging_simple_numbers" id="EXPACIENTE_paginate"><a class="paginate_button previous disabled" aria-controls="EXPACIENTE" aria-disabled="true" aria-role="link" data-dt-idx="previous" tabindex="-1" id="EXPACIENTE_previous">Anterior</a><span><a class="paginate_button current" aria-controls="EXPACIENTE" aria-role="link" aria-current="page" data-dt-idx="0" tabindex="0">1</a><a class="paginate_button " aria-controls="EXPACIENTE" aria-role="link" data-dt-idx="1" tabindex="0">2</a><a class="paginate_button " aria-controls="EXPACIENTE" aria-role="link" data-dt-idx="2" tabindex="0">3</a><a class="paginate_button " aria-controls="EXPACIENTE" aria-role="link" data-dt-idx="3" tabindex="0">4</a><a class="paginate_button " aria-controls="EXPACIENTE" aria-role="link" data-dt-idx="4" tabindex="0">5</a><span class="ellipsis">…</span><a class="paginate_button " aria-controls="EXPACIENTE" aria-role="link" data-dt-idx="225" tabindex="0">226</a></span><a class="paginate_button next" aria-controls="EXPACIENTE" aria-role="link" data-dt-idx="next" tabindex="0" id="EXPACIENTE_next">Siguiente</a></div></div>
                 </div>
             </section>
-            
         </main>
         <footer class="bg-[#3D5876] text-white border-gray-100 border-t-2 mt-auto">
             <div class="w-full max-w-screen-xl mx-auto p-4">

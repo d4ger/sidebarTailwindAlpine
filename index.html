@@ -18,8 +18,8 @@
     <body class="bg-[#fafafa]">
         <div class="flex flex-col min-h-screen" x-data="{open:false}" x-cloak>
             <header
-                class="flex fixed items-center top-0 left-0 z-20 justify-between w-full px-4 backdrop-blur-lg bg-[#f0f0f0]/90 border-b 
-        border-gray-300 h-14 z-40">
+                class="flex fixed items-center top-0 left-0 z-40 justify-between w-full px-4 backdrop-blur-lg bg-[#f0f0f0]/90 border-b 
+        border-gray-300 h-14">
                 <!-- boton sidebar -->
                 <button @click="open=true"
                     class="bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold p-2 rounded-lg inline-flex items-center">
@@ -453,37 +453,26 @@
                             </div>
                         </div>
                         <div>
-                            <section
-                                class="hidden sm:flex sm:flex-row w-[100%] h-[40%]  mx-auto z-20">
+                            <section class="hidden sm:flex sm:flex-wrap sm:justify-center">
                                 <!-- Mitad izquierda de la página -->
-                                <div class="sm:w-[55%]">
-                                    <img src="img/empleadoMes.png"
-                                        alt="hospital"
-                                        class="w-full">
-                                </div>
-                                <!-- Mitad derecha de la página -->
-                                <div class="sm:w-1/2">
+                                <div class="sm:w-1/2 grid grid-cols-2 gap-4">
+                                    <img src="img/empleadoMes.png" alt="empleadoMes" class="w-full col-span-2">
                                     <!-- Primera fila de imágenes -->
                                     <div class="sm:flex">
                                         <div class="sm:w-1/2">
-                                            <img src="img/cumpleanerosJunio.jpg"
-                                                alt class="w-full">
+                                            <img src="img/cumpleanerosJunio.jpg" alt class="w-full">
                                         </div>
                                         <div class="sm:w-1/2">
-                                            <img src="img/empleadoMesMarzo.png"
-                                                alt class="w-full">
+                                            <img src="img/empleadoMesMarzo.png" alt class="w-full">
                                         </div>
                                     </div>
                                     <!-- Segunda fila de imágenes -->
-                                    <div class="sm:flex">
+                                    <div class="sm:flex mt-4">
                                         <div class="sm:w-1/2">
-                                            <img src="img/cumpleanerosAbril.png"
-                                                alt
-                                                class="w-full">
+                                            <img src="img/cumpleanerosAbril.png" alt class="w-full">
                                         </div>
                                         <div class="sm:w-1/2">
-                                            <img src="img/consecuencias.png" alt
-                                                class="w-full">
+                                            <img src="img/consecuencias.png" alt class="w-full">
                                         </div>
                                     </div>
                                 </div>
@@ -607,6 +596,61 @@
                                 class="flex mt-2 items-center text-2xl font-normal leading-normal text-gray-500 mb-4">
                                 Videos Informativos
                             </h2>
+                        </section>
+                        <!-- seccion departamentos -->
+                        <section>
+                            <h2
+                                class="flex mt-2 items-center text-2xl font-normal leading-normal text-gray-500 mb-4">
+                                Departamentos
+                            </h2>
+                            <div>
+                                <div class="flex">
+                                    <img src="img/mini.png" alt="" class="bg-gray-200 h-10 w-12 rounded-lg">
+                                    <a href="" class="">CEYE</a>
+                                </div>
+                                <div>
+                                    <a href="">Nutricion y Cocina</a>
+                                </div>
+                                <div>
+                                    <a href="">Archivo Clinico</a>
+                                </div>
+                                <div>
+                                    <a href="">Ingreso y Cajas</a>
+                                </div>
+                                <div>
+                                    <a href="">Mantenimiento</a>
+                                </div>
+                                <div>
+                                    <a href="">Direccion General</a>
+                                </div>
+                                <div>
+                                    <a href="">Comercializacion</a>
+                                </div>
+                                <div>
+                                    <a href="">Operaciones y Calidad</a>
+                                </div>
+                                <div>
+                                    <a href="">Biomedica</a>
+                                </div>
+                                <div>
+                                    <a href="">Administracion y Finanzas</a>
+                                </div>
+                                <div>
+                                    <a href="">Enfermeria</a>
+                                </div>
+                                <div>
+                                    <a href="">Recursos Humanos</a>
+                                </div>
+                                <div>
+                                    <a href="">Direccion Medica</a>
+                                </div>
+                                <div>
+                                    <a href="">Almacen y Compras</a>
+                                </div>
+                                <div>
+                                    <a href="">Informatica</a>
+                                </div>
+                            </div>
                         </section>
                     </section>
                 </main>
