@@ -19,7 +19,7 @@
         <div class="flex flex-col min-h-screen" x-data="{open:false}" x-cloak>
             <header
                 class="flex fixed items-center top-0 left-0 z-20 justify-between w-full px-4 backdrop-blur-lg bg-[#f0f0f0]/90 border-b 
-        border-gray-300 h-14">
+        border-gray-300 h-14 z-40">
                 <!-- boton sidebar -->
                 <button @click="open=true"
                     class="bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold p-2 rounded-lg inline-flex items-center">
@@ -33,7 +33,7 @@
                 </button>
                 <!-- Inicio sidebar -->
                 <nav
-                    class="container mx-auto px-4 flex items-center justify-between py-4">
+                    class="container mx-auto px-4 flex items-center justify-between py-4 z-30">
                     <div
                         class="bg-white text-black h-screen w-60 fixed left-0 top-0 divide-y-2 divide-slate-200 z-30 whitespace-nowrap overflow-auto scrollbar-hide transition origin-left transform border-r translate-x-0"
                         @click.away="open=false"
@@ -454,7 +454,7 @@
                         </div>
                         <div>
                             <section
-                                class="hidden sm:flex sm:flex-row w-[100%] h-[40%]  mx-auto">
+                                class="hidden sm:flex sm:flex-row w-[100%] h-[40%]  mx-auto z-20">
                                 <!-- Mitad izquierda de la página -->
                                 <div class="sm:w-[55%]">
                                     <img src="img/empleadoMes.png"
@@ -489,7 +489,7 @@
                                 </div>
                             </section>
                             <!-- menu carrusel mobil -->
-                    <section class="sm:hidden">
+                    <section class="sm:hidden z-20">
                         <div class="max-w-2xl mx-auto">
                             <div id="default-carousel" class="relative"
                                 data-carousel="static">
